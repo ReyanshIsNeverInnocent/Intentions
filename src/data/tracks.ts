@@ -158,5 +158,100 @@ export const tracks: Track[] = [
     lyricsFile: mediaUrl("lyrics/adela-nicole-kidman.lrc"),
     duration: 181,
     color: "#ca795e"
+  },
+  {
+    id: "beyonce-drunk-in-love-feat-jay-z",
+    title: "Drunk in Love",
+    artist: "Beyoncé feat. Jay-Z",
+    album: "BEYONCÉ",
+    year: 2013,
+    audio: mediaUrl("audio/beyonce-drunk-in-love-feat-jay-z.mp3"),
+    cover: mediaUrl("covers/beyonce-drunk-in-love-feat-jay-z.jpg"),
+    lyricsFile: mediaUrl("lyrics/beyonce-drunk-in-love-feat-jay-z.lrc"),
+    duration: 324,
+    color: "#80749a"
+  },
+  {
+    id: "american-pie",
+    title: "American Pie",
+    artist: "Don McLean",
+    album: "American Pie",
+    year: 1971,
+    audio: mediaUrl("audio/american-pie.mp3"),
+    cover: mediaUrl("covers/american-pie.jpg"),
+    lyricsFile: mediaUrl("lyrics/american-pie.lrc"),
+    duration: 513,
+    color: "#a5825d"
+  },
+  {
+    id: "lust-for-life",
+    title: "Lust for Life",
+    artist: "Lana Del Rey & The Weeknd",
+    album: "Lust for Life",
+    year: 2017,
+    audio: mediaUrl("audio/lust-for-life.mp3"),
+    cover: mediaUrl("covers/lust-for-life.jpg"),
+    lyricsFile: mediaUrl("lyrics/lust-for-life.lrc"),
+    duration: 264,
+    color: "#8eaa9b"
+  },
+  {
+    id: "shut-up-and-listen-x-the-hills",
+    title: "Shut Up and Listen x The Hills",
+    artist: "Luke Muzzic",
+    album: "Shut Up and Listen x The Hills",
+    year: 2024,
+    audio: mediaUrl("audio/shut-up-and-listen-x-the-hills.mp3"),
+    cover: mediaUrl("covers/shut-up-and-listen-x-the-hills.jpg"),
+    duration: 250,
+    color: "#a98768"
+  },
+  {
+    id: "jupiter",
+    title: "Jupiter",
+    artist: "The Marías",
+    album: "Jupiter",
+    year: 2020,
+    audio: mediaUrl("audio/jupiter.mp3"),
+    cover: mediaUrl("covers/jupiter.jpg"),
+    lyricsFile: mediaUrl("lyrics/jupiter.lrc"),
+    duration: 192,
+    color: "#a54436"
+  },
+  {
+    id: "drunk-in-love-remix",
+    title: "Drunk in Love (Remix)",
+    artist: "The Weeknd",
+    album: "Drunk in Love (Remix)",
+    year: 2014,
+    audio: mediaUrl("audio/drunk-in-love-remix.mp3"),
+    cover: mediaUrl("covers/drunk-in-love-remix.png"),
+    lyricsFile: mediaUrl("lyrics/drunk-in-love-remix.lrc"),
+    duration: 208,
+    color: "#617b84"
+  },
+  {
+    id: "six-feet-under",
+    title: "Six Feet Under",
+    artist: "The Weeknd",
+    album: "Starboy",
+    year: 2016,
+    audio: mediaUrl("audio/six-feet-under.mp3"),
+    cover: mediaUrl("covers/six-feet-under.jpg"),
+    lyricsFile: mediaUrl("lyrics/six-feet-under.lrc"),
+    duration: 238,
+    color: "#aa4d5b"
+  },
+  {
+    id: "what-you-need",
+    title: "What You Need",
+    artist: "The Weeknd",
+    album: "House of Balloons",
+    year: 2011,
+    audio: mediaUrl("audio/what-you-need.mp3"),
+    cover: mediaUrl("covers/what-you-need.jpg"),
+    lyricsFile: mediaUrl("lyrics/what-you-need.lrc"),
+    duration: 206,
+    color: "#9a8f7e"
   }
 ];

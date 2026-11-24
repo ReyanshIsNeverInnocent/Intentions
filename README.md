@@ -24,4 +24,4 @@ Open [localhost:3000](http://localhost:3000) and press play.
 
 ## Upload media
 
-Copy `.env.example` to `.env.local` and add your Supabase secret key. Put files in the sibling `Intentions-media-backup` folders, then run `npm run upload:media`. Pass specific paths after `--` to upload only those files. Add new track metadata in `src/data/tracks.ts`.
+Copy `.env.example` to `.env.local` and add your Supabase secret key. Keep local media in `public/audio`, `public/lyrics`, and `public/covers`; Git ignores those files. Run `npm run upload:media` to upload them, or pass specific paths after `--`. Add new track metadata in `src/data/tracks.ts`.

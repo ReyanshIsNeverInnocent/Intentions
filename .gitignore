@@ -20,6 +20,12 @@ npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
+# Local media copies
+/public/audio/*.mp3
+/public/lyrics/*.lrc
+/public/covers/*.jpg
+/public/covers/*.png
+
 # Reference material
 /reference/
 /Reference/

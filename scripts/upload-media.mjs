@@ -5,8 +5,9 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const envFile = path.join(projectRoot, ".env.local");
-const mediaRoot = path.resolve(projectRoot, "..", "Intentions-media-backup");
+const mediaRoot = path.join(projectRoot, "public");
 const bucketName = "intentions-media";
+const mediaFolders = ["audio", "lyrics", "covers"];
 
 const contentTypes = {
   ".jpg": "image/jpeg",
@@ -84,7 +85,9 @@ async function main() {
         getObjectKey(relativePath);
         return { absolutePath, relativePath };
       })
-    : await collectFiles(mediaRoot);
+    : (await Promise.all(
+        mediaFolders.map((folder) => collectFiles(path.join(mediaRoot, folder), folder))
+      )).flat();
 
   if (!files.length) throw new Error(`No media files found in ${mediaRoot}.`);
 
