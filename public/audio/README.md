@@ -1,1 +1,1 @@
-Audio files for the Intentions playlist are stored in this folder. The playlist metadata and playback order live in `src/data/tracks.ts`.
+Playlist audio, lyrics, and covers are hosted in the public `intentions-media` Supabase Storage bucket. Object names use each track ID in lowercase kebab case, such as `audio/adela-nicole-kidman.mp3`. The public media URL is configured in `src/config/player.ts`, and playlist metadata lives in `src/data/tracks.ts`.

@@ -319,7 +319,7 @@ export default function HomePage() {
       if (transitionId === transitionIdRef.current) {
         transitioningRef.current = false;
         setIsPlaying(!fromAudio.paused);
-        setNotice(`Couldn't play ${track.title}. Check the audio file in public/audio.`);
+        setNotice(`Couldn't play ${track.title}. Check its audio file in Supabase Storage.`);
       }
       return;
     }
@@ -389,7 +389,7 @@ export default function HomePage() {
         setIsPlaying(true);
       } catch {
         setIsPlaying(false);
-        setNotice(`Couldn't resume ${track.title}. Check the audio file in public/audio.`);
+        setNotice(`Couldn't resume ${track.title}. Check its audio file in Supabase Storage.`);
       }
       return;
     }
@@ -420,7 +420,7 @@ export default function HomePage() {
       audio.currentTime = 0;
       void audio.play().then(() => setIsPlaying(true)).catch(() => {
         setIsPlaying(false);
-        setNotice(`Couldn't replay ${currentTrack.title}. Check the audio file in public/audio.`);
+        setNotice(`Couldn't replay ${currentTrack.title}. Check its audio file in Supabase Storage.`);
       });
       return;
     }
@@ -582,6 +582,7 @@ export default function HomePage() {
         <audio
           key={deck}
           ref={(element) => { audioRefs.current[deck] = element; }}
+          crossOrigin="anonymous"
           preload="metadata"
           onTimeUpdate={(event) => handleTimeUpdate(deck, event.currentTarget)}
           onLoadedMetadata={(event) => {
@@ -601,7 +602,7 @@ export default function HomePage() {
           onError={() => {
             if (activeDeckRef.current !== deck) return;
             setIsPlaying(false);
-            setNotice(`Couldn't load ${currentTrack.title}. Check the audio file in public/audio.`);
+            setNotice(`Couldn't load ${currentTrack.title}. Check its audio file in Supabase Storage.`);
           }}
         />
       ))}
